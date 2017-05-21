@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1000px;
+  height: 15vh;
+  padding: 5vh;
+  border: 1px solid #080;
+  background-color: #eee;
+  margin: 0 auto;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+#add-element,
+#add-element2 {
+  margin: 0 auto;
+  width: 100px;
+  height: 20px;
+  background-color: #4a4;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: inline-block;
+  text-align: center;
+  border-width: 0px;
+  color: white;
+}
+#add-element:hover,
+#add-element2:hover {
+  background-color: #080;
+}
+
+#reset,
+#reset2 {
+  margin: 0 auto;
+  width: 100px;
+  height: 20px;
+  background-color: #555;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: inline-block;
+  text-align: center;
+  border-width: 0px;
+  color: white;
+}
+#reset:hover,
+#reset2:hover {
+  background-color: #e00;
+}
+
+#stop,
+#stop2 {
+  margin: 0 auto;
+  width: 100px;
+  height: 20px;
+  background-color: #e66;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  display: inline-block;
+  text-align: center;
+  border-width: 0px;
+  color: white;
+}
+#stop:hover,
+#stop2:hover {
+  background-color: #e00;
+}
+
+#output,
+#output2 {
+  font-weight: 200;
+  font-size: 16;
+  color: #555;
+  font-family: "Monospace", sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+/*# sourceMappingURL=master.css.map */

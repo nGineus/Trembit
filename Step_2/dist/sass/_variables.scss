@@ -1,0 +1,52 @@
+// Colors
+$g_text_color: white;
+$g_main_color: #555;
+$g_stop_color: #e66;
+$g_reset_color: #e00;
+$g_accent_color: #080;
+$g_light_accent_color: #4a4;
+$g_background_color: #eee;
+$g_arena_font_family: 'Monospace',
+sans-serif;
+$g_main_font_family: 'Roboto',
+sans-serif;
+//Mixins
+@mixin main_text ($style, $size, $color) {
+    font-weight: $style;
+    font-size: $size;
+    color: $color;
+}
+
+@mixin main_button ($width, $height, $color) {
+    // position: relative;
+    margin: 0 auto;
+    width: $width + px;
+    height: $height + px;
+    background-color: $color;
+    @include roundedCorners($height/2);
+}
+
+@mixin roundedCorners($size) {
+    -webkit-border-radius: $size + px;
+    -moz-border-radius: $size + px;
+    border-radius: $size + px;
+}
+
+@mixin opacity($alpha) {
+    -webkit-opacity: $alpha;
+    -moz-opacity: $alpha;
+    opacity: $alpha;
+    // IE 8
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$alpha*100)";
+}
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}

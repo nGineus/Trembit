@@ -1,0 +1,62 @@
+@import 'variables';
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 1000px;
+    height: 15vh;
+    padding: 5vh;
+    border: 1px solid $g_accent_color;
+    background-color: $g_background_color;
+    margin: 0 auto;
+    margin-top: 10vh;
+    text-align: center;
+}
+
+#add-element,
+#add-element2 {
+    @include main_button (100, 20, $g_light_accent_color);
+    margin-top: 15px;
+    display: inline-block;
+    text-align: center;
+    border-width: 0px;
+    color: $g_text_color;
+    &:hover {
+        background-color: $g_accent_color;
+    }
+}
+
+#reset,
+#reset2 {
+    @include main_button (100, 20, $g_main_color);
+    margin-top: 15px;
+    display: inline-block;
+    text-align: center;
+    border-width: 0px;
+    color: $g_text_color;
+    &:hover {
+        background-color: $g_reset_color;
+    }
+}
+
+#stop,
+#stop2 {
+    @include main_button (100, 20, $g_stop_color);
+    margin-top: 15px;
+    display: inline-block;
+    text-align: center;
+    border-width: 0px;
+    color: $g_text_color;
+    &:hover {
+        background-color: $g_reset_color;
+    }
+}
+
+#output,
+#output2 {
+    @include main_text (200, 16, $g_main_color);
+    font-family: $g_arena_font_family;
+    text-align: center;
+    width: 100%;
+}
